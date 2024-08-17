@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Ensayo</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="paginas">
+            <button id="Ensayo1">IEC 60879:2019</button>
+            <button id="Ensayo2">AIREOMETRIA</button>
+        </div>
+        <h1>IEC 60879:2019</h1>
+        <div class="form-section">
+            <div class="left-panel">
+                <label data-label="Fecha:"><input type="date"></label>
+                <label data-label="Referencia del VT:"><input type="text"></label>
+                <label data-label="Nombre del VT:"><input type="text"></label>
+                <label data-label="Proveedor del VT:"><input type="text"></label>
+                <label data-label="Diámetro del VT (m):"><input type="text"></label>
+                <label data-label="Nº de palas:"><input type="text"></label>
+                <label data-label="Nº de velocidades:"><input type="text"></label>
+                <label data-label="Nº velocidad ensayo:"><input type="text"></label>
+                <label data-label="Velocidad máxima :"><input type="text"></label>
+                
+                <div class="rpm-section">
+                    <label data-label="RPM V1:"><input type="number"></label>
+                    <label data-label="RPM V2:"><input type="number"></label>
+                    <label data-label="RPM V3:"><input type="number"></label>
+                    <label data-label="RPM V4:"><input type="number"></label>
+                    <label data-label="RPM V5:"><input type="number"></label>
+                    <label data-label="RPM V6:"><input type="number"></label>
+                </div>
+            </div>
+            <div class="center-panel"> 
+                
+                <label data-label="Hora:"><input type="time"></label>
+                <div class="image-placeholder">Foto VT</div>
+            
+                <div class="electric-data">
+                    <label data-label="Voltaje (V)"><input type="number"></label>
+                    <label data-label="Frecuencia (Hz)"><input type="number"></label>
+                    <label data-label="Intensidad (A)"><input type="number"></label>
+                    <label data-label="Potencia (W)"><input type="number"></label>
+                </div>
+
+                <div class="tiempo-datos">
+                    <label data-label="Tiempo adquisición de datos"><input type="number"></label>
+                    <label data-label="Frecuencia adquisición de datos"><input type="number"></label>
+                </div>
+                
+            </div>
+
+            <div class="right-panel">
+                <div class="anemometer-section">
+                    <div>
+                        <h3>Anemómetro 1</h3>
+                        <label data-label="Velocidad (m/s):"><input type="number"></label>
+                        <label data-label="Temperatura (°C):"><input type="number"></label>
+                    </div>
+                    <div>
+                        <h3>Anemómetro 2</h3>
+                        <label data-label="Velocidad (m/s):"><input type="number"></label>
+                        <label data-label="Temperatura (°C):"><input type="number"></label>
+                    </div>
+                    <div>
+                        <h3>Anemómetro 3</h3>
+                        <label data-label="Velocidad (m/s):"><input type="number"></label>
+                        <label data-label="Temperatura (°C):"><input type="number"></label>
+                    </div>
+                    <div>
+                        <h3>Anemómetro 4</h3>
+                        <label data-label="Velocidad (m/s):"><input type="number"></label>
+                        <label data-label="Temperatura (°C):"><input type="number"></label>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button id="reset">Reset</button>
+                    <button id="start-test">Start Test</button>
+                    <button id="save-data">Save Data</button>
+                    <button id="report">Informe</button>
+                </div>
+            </div>
+        </div>
+        <!-- Resultados -->
+        <div class="results-section">
+            <h2>Resultados</h2>
+            <!-- Aquí irán los campos para los resultados -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
